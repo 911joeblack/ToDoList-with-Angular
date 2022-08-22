@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table,th,td{
+        border: 1px solid black
+    }
+</style>
+<div>
+<h1>{{pageTitle}}</h1>
+<table *ngIf="tasks.length">
+    <tr>
+        <th>Status</th>
+        <th>Description</th>
+        <th>Date Created</th>
+        <th>Est Completion Date</th>
+        <th>Completion Date</th>
+    </tr>
+    <tr *ngFor="let tasks of tasks">
+        <td>{{tasks.status}}</td>
+        <td>{{tasks.description}}</td>
+        <td>{{tasks.dateCreated}}</td>
+        <td>{{tasks.estDate}}</td>
+        <td>{{tasks.completionDate}}</td>
+    </tr>
+</table>
+</div>
+</html>

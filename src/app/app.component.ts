@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
   selector: 'pm-root',
   template:
   `
-    <div><h1>{{ pageTitle }}</h1></div>
+    <div><pm-tasks></pm-tasks></div>
   `
 })
 
 export class AppComponent {
-  pageTitle = 'To Do List';
+  
 }
